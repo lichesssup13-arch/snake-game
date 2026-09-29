@@ -3,7 +3,7 @@ import sys
 import random
 import pygame_menu
 from collections import deque
-import bot_exp
+import bot
 pygame.init() 
 
 SIZE_BLOCK = 20
@@ -169,7 +169,7 @@ num_games_input = bot_menu.add.text_input('Количество игр :', defau
 
 # Кнопка запуска серии
 bot_menu.add.button('Запустить серию', 
-                    lambda: bot_exp.start_bot_game(bot_selector.get_value()[0][0], 
+                    lambda: bot.start_bot_game(bot_selector.get_value()[0][0], 
                                                    int(num_games_input.get_value())))
 
 bot_menu.add.button('Назад', pygame_menu.events.BACK)
