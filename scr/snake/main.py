@@ -1,4 +1,4 @@
-from snake import SnakeGame
+from scr.snake import SnakeGame
 
 def main():
     game = SnakeGame()
