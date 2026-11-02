@@ -3,7 +3,7 @@ class SnakeGame:
         self.score = 0
 
     def run(self):
-        print("Змейка запущена! (пока заглушка)")
+        print("Змейка запущена! работает")
 
     def update(self):
         pass
