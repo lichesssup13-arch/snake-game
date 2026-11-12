@@ -24,15 +24,6 @@ class Snake:
         self.x = x
         self.y = y
         self.color = color
-<<<<<<< HEAD:srс/snake/game.py
-        self.head = Block(x, y, color)
-        self.snakebody = [self.head]
-    def draw(self, screen):
-        for snakebloke in self.snakebody:
-            snakebloke.draw(screen)
-    def move():
-        pass
-=======
         self.snakehead = Block(self.x, self.y, self.color)
         self.snakebody = [self.snakehead] 
         self.direction = 'r'
@@ -57,8 +48,6 @@ class Snake:
             if self.direction == 'l':
                 snakeblock.x - 1;
 
-
->>>>>>> feature:scr/snake/game.py
     def eat():
         pass
 
@@ -85,16 +74,11 @@ class SnakeGame:
             snakesettings.HEIGHT - 2*snakesettings.ETCH - snakesettings.HEAD_HEIGHT)
         self.screen.fill(snakesettings.SCREEN_COLOR)
         pygame.draw.rect(self.screen, snakesettings.FIELD_COLOR, self.field, 0)
-<<<<<<< HEAD:srс/snake/game.py
-        self.snake = Snake(12, 12, snakesettings.SNAKE_COLOR)    
-        self.snake.draw(self.screen)
-=======
+
 
         # нарисуем змейку
         self.snake = Snake(snakesettings.X // 2, snakesettings.Y // 2, snakesettings.SNAKE_COLOR)
         self.snake.draw(self.screen)
-                         
->>>>>>> feature:scr/snake/game.py
         while self.running:
             # snake movement
             self.snake.move()
@@ -103,15 +87,8 @@ class SnakeGame:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-<<<<<<< HEAD:srс/snake/game.py
                     self.running = False
             pygame.display.flip()
-        
-=======
-                    sys.exit()
-
-            pygame.display.flip()
->>>>>>> feature:scr/snake/game.py
     # def stop(self):
     #     self.running = False
 
